@@ -1,0 +1,408 @@
+
+/* 
+
+FILE NAME: Project/discover/discover.less
+
+WRITTEN BY: Øyving Auerstad Bjørhus
+
+WHEN: 20. Oktober 2015
+
+PURPOSE: This is the main file for all php files below the discover group.
+
+*/
+
+.discover {
+	counter-reset: section;
+    background-color: #000;
+    border-radius: 6px;
+    padding: 8px 2%;
+    box-sizing: border-box;
+    width: 100%;
+    border: 0;
+
+    input[type="checkbox"] {
+        display: none;
+        
+        & + label + ul {
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height .4s ease-in-out;
+            counter-reset: section;
+        }
+	}
+
+	li > input[type="checkbox"]:checked + label:not(.open) + ul,
+    li > input[type="checkbox"] + label.open + ul {
+		max-height: 2000px;
+	}
+
+	li  {
+		padding: 1%;
+		padding-left: 0;
+	}
+
+	li:before  {
+		visibility: hidden;
+		font-family: monospace;
+		counter-increment: section;
+		content: counters(section, "----");
+	}
+	input[type="checkbox"] + label:after {
+		content: "";
+		color: @tekstcol;
+		position: relative;
+		top: .15em;
+		left: 4px;
+		display: inline-block;
+		width: 0;
+		height: 0;
+		border: .3em solid transparent;
+		border-top-color: #fff;
+		vertical-align: middle;
+	}
+	input[type="checkbox"]:checked + label:not(.open):after,
+    input[type="checkbox"] + label.open:after {
+		border-top-color: transparent;
+		border-bottom-color: #fff;
+		top: -.15em;
+	}
+
+	> li  {
+		padding-left: 0;
+		font-size: 1.2em;
+		font-weight: bold;
+		color: #aaa;
+	}
+
+	li > label {
+		cursor:pointer;
+        text-transform: capitalize;
+		transition-property: background-color;
+		transition-duration: .2s;
+		transition-timing-function: ease-in-out;
+        
+        &.hover {
+            -webkit-transition-duration: .05s;
+            transition-duration: .05s;
+            border-bottom: 2px solid #fff;
+        }
+	}
+    
+	li > label.hover, li > input[type="checkbox"]:checked + label:not(.open),
+    li > input[type="checkbox"] + label.open {
+		color: #fff;
+	}
+    
+    .group-block {
+		@media (max-width: 620px) {
+			word-break: break-all;
+			font-size: .7em;
+		}
+        
+        .group-name {
+            text-transform: capitalize;
+            margin: 0 0 8px 0;
+        }
+        
+        a {
+            text-decoration: none;
+            padding: 8px;
+            display: inline-block;
+            box-sizing: border-box;
+            
+            &.hover:not(.btn) {
+                text-decoration: underline;
+            }
+        }
+        
+        figure {
+            width: 25%;
+            display: inline-block;
+            box-sizing: border-box;
+            
+            img {
+                width: 100%;
+            }
+			
+			figcaption {
+				text-transform: capitalize;
+				word-break: break-all;
+			}
+			
+			@media (max-width: 620px) {
+				width: 100%;
+				
+				img {
+					width: auto;
+					height: 50px;
+					display: block;
+					margin: auto;
+				}
+			}
+        }
+        
+        div {
+            background-color: #111;
+            
+            figure {
+                box-shadow: 4px 0 0 #000;
+				
+				@media (max-width: 620px) {
+                	box-shadow: 0 4px 0 #000;
+				}
+            }
+            
+            ul {
+                width: 74%;
+                display: inline-block;
+                box-sizing: border-box;
+                vertical-align: top;
+                padding: 8px;
+                list-style: none;
+
+                &.members {
+                    box-shadow: inset 8px 0 0 -4px #000;
+					
+					@media (max-width: 620px) {
+                    	box-shadow: none;
+					}
+                }
+
+                &.songs {
+                    box-shadow: inset 0 8px 0 -4px #000;
+                    width: 100%;
+                }
+
+                li {
+                    
+                    &:before {
+                        content: "";
+                    }
+                    
+                    &.member-description, &.song-description {
+                        color: #fff;
+                    }
+
+                    &.member {
+                        text-transform: capitalize;
+                        font-weight: normal;
+                    }
+
+                    &.song {
+                        text-transform: capitalize;
+                        font-weight: normal;
+                        
+                        span {
+                            
+                        }
+                        
+                        button {
+                            height: 1.6em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#ukasartist {
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+    padding: 1%;
+    padding-top: 0;
+	width: 29%;
+}
+
+.ukasartist {
+    background-color: black;
+    padding: 16px;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    
+    > div {
+        margin-bottom: 24px;
+        
+        h2 {
+            margin: 0 0 8px 0;
+        }
+        
+        &:last-of-type {
+            margin: 0;
+        }
+    }
+}
+
+#sjangere {
+    display: inline-block;
+    padding-right: 5%;
+    padding-left: 2%;
+	box-sizing: border-box;
+    width: 70%;
+}
+
+@media (max-width: 768px) {
+    #ukasartist, #sjangere {
+        width: 100%;
+        padding: 3%;
+    }
+}
+
+#artistbilde {
+    height: 216.5px;
+    width: 325px;
+}
+
+h2 {
+	text-align: center;
+    margin: 20px;
+}
+
+#infoukasartist {
+	max-width: 325px;
+}
+
+/* Style for artist.php */
+.boxed {
+    padding-top: 8%;
+}
+
+#archiveright {
+    width: 70%;
+}
+#archiveleft {
+    vertical-align: top;
+    width: 29%;
+}
+
+#articleleft, #articleright, #archiveright, #archiveleft {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 0 2%;
+
+	@media (max-width: 768px) {
+		width: 100%;
+		padding: 0 2%;
+	}
+}
+
+#archiveimg {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Dette er ikke en hack, men heller en annen anvendelse av padding for å opprettholde aspekt-ratio på bilder */
+.cropimg {
+    width: 100%;
+    height: 0;
+    padding-bottom: 36%;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+}
+
+img {
+    width: 100%;
+}
+
+figcaption:first-letter {
+	text-transform: uppercase;
+}
+
+#group {
+	
+	h2 {
+		margin: 16px 0;
+		text-transform: capitalize;
+	}
+	
+	.error {
+		color: #aaa;
+    	text-align: center;
+	}
+	
+	.header {
+		margin: 16px 0;
+	}
+	
+	.group {
+        max-height: 450px;
+        margin: 16px 0;
+        padding: 8px;
+        opacity: 1;
+        overflow: hidden;
+		box-sizing: border-box;
+        transition: max-height, padding, margin, opacity;
+        transition-duration: .4s;
+        transition-timing-function: ease-in-out;
+		
+		h2 {
+			text-transform: capitalize;
+		}
+		
+		&.hover {
+			background-color: #111;
+		}
+        
+        &.disabled {
+            margin: 0;
+            padding: 0 8px;
+            opacity: 0;
+            max-height: 0;
+        }
+        
+	}
+    
+    .group-songs {
+        margin: 16px 0;
+        background-color: #111;
+        box-sizing: border-box;
+        padding: 16px;
+        border-radius: @radius;
+    }
+    
+    .song-description {
+        font-family: @font-tekst;
+        color: @tittelcol;
+        font-weight: bold;
+        font-size: 1.6em;
+        margin-bottom: 16px;
+    }
+
+    .song {
+        font-size: @font-tekst;
+        color: @tittelcol;
+        text-transform: capitalize;
+        line-height: 1.5em;
+        
+        .play-btn {
+            height: 1.5em;
+        }
+    }
+	
+	figure {
+		max-width: 256px;
+		display: block;
+		margin: auto;
+	}
+	
+	& > h3 {
+    	margin-bottom: 16px;
+	}
+	
+	& > .group > a, #group > h3 > a {
+		text-decoration: none;
+
+		&.hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+#group > .group > .cropimg {
+    padding-bottom: 20%;
+}

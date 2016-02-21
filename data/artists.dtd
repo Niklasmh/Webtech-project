@@ -1,0 +1,50 @@
+<!--
+
+FILE NAME: Project/data/artists.dtd
+
+WRITTEN BY: Øyvind Auestad Bjørhus
+
+WHEN: 10. November 2015
+
+PURPOSE: Make a structure for artists.xml
+
+-->
+
+<!ELEMENT music (genres, groups)>
+
+<!ELEMENT genres (genre)>
+
+<!ELEMENT genre (sub_genre)*>
+<!ATTLIST genre name CDATA #REQUIRED>
+
+<!ELEMENT sub_genre (genre_group)+>
+<!ATTLIST sub_genre name CDATA #REQUIRED>
+
+<!ELEMENT genre_group EMPTY>
+<!ATTLIST  genre_group id IDREF #REQUIRED>
+
+<!ELEMENT groups (group)>
+
+<!ELEMENT group (name, group_members, start_date, picture, songs, tags)*>
+<!ATTLIST group name CDATA #REQUIRED>
+<!ATTLIST group id IDREF #REQUIRED>
+
+<!ELEMENT group_members (group_member)+>
+<!ELEMENT start_date (#PCDATA)>
+<!ELEMENT songs (song)*>
+<!ELEMENT tags (tag)*>
+
+<!ELEMENT group_member EMPTY>
+<!ATTLIST group_member name CDATA #REQUIRED>
+
+<!ELEMENT picture EMPTY>
+<!ATTLIST picture src CDATA "false">
+<!ATTLIST picture alt CDATA #REQUIRED>
+
+<!ELEMENT song EMPTY>
+<!ATTLIST song title CDATA #REQUIRED>
+<!ATTLIST song length CDATA "false">
+<!ATTLIST song src CDATA "false">
+
+<!ELEMENT tag EMPTY>
+<!ATTLIST tag name CDATA #REQUIRED>

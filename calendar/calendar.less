@@ -1,0 +1,247 @@
+
+/* 
+
+FILE NAME: Project/calendar/calendar.less
+
+WRITTEN BY: Ellen Bakksjø
+
+WHEN: 20. Oktober 2015
+
+PURPOSE: This is the main file for all php files below the calendar group, which happens to be only one file.
+
+*/
+
+#kropp {
+    text-align: center;
+
+	button {
+		width: 20%;
+		min-width: 50px;
+		max-width: 150px;
+
+		@media (max-width: 550px), (max-width: 720px) and (min-aspect-ratio: 1/1) {
+			width: 45%;
+			bottom: 0;
+
+			&#right-btn {
+				display: block;
+				position: static;
+				margin-left: auto;
+			}
+		}
+
+		img {
+			height: 42px;
+			transition: opacity .05s ease-in-out;
+		}
+
+		&.hover img {
+			opacity: .8;
+		}
+	}
+	
+	header {
+		position: relative;
+		margin-bottom: 2%;
+		
+		h2 {
+			display: inline-block;
+			vertical-align: middle;
+			padding: 0 0 10px 0;
+		}
+	}
+}
+
+#left-btn {
+    position: absolute;
+    left: 0;
+}
+
+#right-btn {
+    position: absolute;
+    right: 0;
+}
+
+#left-bottom-btn, #right-bottom-btn {
+	width: 20%;
+	min-width: 50px;
+	max-width: 150px;
+	margin: 8px 0;
+	
+	@media (min-width: 576px) {
+		display: none;
+	}
+}
+
+#calendar {
+    width: 100%;
+    border: 4px solid  black;
+    table-layout: fixed;
+	
+	td, th {
+		background-color: #222;
+		height: 64px;
+		vertical-align: middle;
+		box-sizing: border-box;
+		color: #aaa;
+		font-family: Trebuchet MS, sans-serif;
+	}
+	
+	th {
+		font-weight: bold;
+		text-transform: capitalize;
+		background-color: #444;
+		box-shadow: inset 0 -2px 0 0 #222;
+		
+		&:after {
+			content: "dag";
+		}
+		
+		@media (max-width: 576px) {
+			display: none;
+		}
+	}
+	
+	td {
+		transition-property: background-color;
+		transition-duration: .05s;
+		transition-timing-function: ease-in-out;
+		color: transparent;
+		
+		&.date {
+			background-color: #333;
+			box-shadow: inset 0 0 0 2px #222;
+			transition-duration: .2s;
+			color: #aaa;
+            
+            > div:first-child {
+                font-size: .7em;
+                margin-bottom: .4em;
+                padding-left: 8px;
+                box-sizing: border-box;
+                text-align: left;
+                color: #fff;
+            }
+            
+            > div:nth-child(2) {
+                font-size: 1em;
+            }
+            
+            > div:last-child {
+                font-size: .7em;
+                margin-top: .5em;
+                padding-right: 8px;
+                box-sizing: border-box;
+                text-align: right;
+                color: #0d0;
+            }
+		}
+		
+		&.today {
+			box-shadow: inset 0 0 0 2px #222, inset 0 0 0 4px #555;
+			background-color: #444;
+            color: #fff;
+            
+            > div:first-child:before {
+                content: "\00a0";
+            }
+            
+            > div:last-child:before {
+                content: "Idag ";
+                color: #0ff;
+            }
+		}
+		
+		&.event {
+			cursor: pointer;
+            
+            &.hover {
+                background-color: #555;
+                transition-duration: .05s;
+            }
+		}
+		
+		@media (max-width: 576px) {
+			display: block;
+			
+			&.date {
+				text-align: left;
+				padding: 8px;
+				font-size: 1rem;
+				transition-duration: 0s;
+				height: 42px;
+                position: relative;
+				
+				&:nth-child(1) > div:nth-child(2):before { content: "Man. "; }
+				&:nth-child(2) > div:nth-child(2):before { content: "Tir. "; }
+				&:nth-child(3) > div:nth-child(2):before { content: "Ons. "; }
+				&:nth-child(4) > div:nth-child(2):before { content: "Tor. "; }
+				&:nth-child(5) > div:nth-child(2):before { content: "Fre. "; }
+				&:nth-child(6) > div:nth-child(2):before { content: "Lør. "; }
+				&:nth-child(7) > div:nth-child(2):before { content: "Søn. "; }
+                
+                > div:first-child {
+                    width: 40%;
+                    position: absolute;
+                    left: 30%;
+                    display: inline-block;
+                    font-size: .8em;
+                    margin-top: .4em;
+                    text-align: center;
+                    color: #fff;
+                    
+                    &:empty + div:nth-child(2) {
+                        width: 100%;
+                    }
+                }
+
+                > div:nth-child(2) {
+                    width: 30%;
+                    position: absolute;
+                    left: 0;
+                    display: inline-block;
+                    text-align: left;
+                    padding-left: 8px;
+                    box-sizing: border-box;
+                    font-size: 1em;
+                }
+
+                > div:last-child {
+                    width: 30%;
+                    position: absolute;
+                    left: 70%;
+                    display: inline-block;
+                    font-size: .7em;
+                    margin-top: .6em;
+                    text-align: right;
+                    color: #0d0;
+                }
+			}
+			
+			&:not(.date) {
+				height: 0;
+			}
+		}
+	}
+	
+	tr {
+		@media (max-width: 576px) {
+			display: block;
+			font-weight: bold;
+			font-family: Trebuchet MS, sans-serif;
+			font-size: 2em;
+			text-shadow: 0 -1px 0 #000;
+			box-sizing: border-box;
+			color: #aaa;
+			
+			&[data-week]:before {
+				content: "Uke " attr(data-week);
+				line-height: 1.6em;
+			}
+		}
+	}
+}
+
+#month-year {
+    text-transform: capitalize;
+}

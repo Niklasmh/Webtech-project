@@ -1,0 +1,25 @@
+<!--
+
+FILE NAME: Project/data/calendar.dtd
+
+WRITTEN BY: Øyvind Auestad Bjørhus
+
+WHEN: 10. November 2015
+
+PURPOSE: Make a structure for calendar.xml
+
+-->
+
+<!ELEMENT events (event)>
+
+<!ELEMENT event (title, place, description)*>
+<!ATTLIST event starttime CDATA #REQUIRED>
+<!ATTLIST event endtime CDATA #REQUIRED>
+
+<!ELEMENT title (#PCDATA)>
+
+<!ELEMENT place (#PCDATA)>
+<!ATTLIST place lat CDATA #REQUIRED>
+<!ATTLIST place lng CDATA #REQUIRED>
+
+<!ELEMENT description (#PCDATA)>

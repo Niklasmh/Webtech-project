@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE events SYSTEM "calendar.dtd">
+
+<!--
+
+FILE NAME: Project/data/calendar.xml
+
+WRITTEN BY: Øyvind Auestad Bjørhus
+
+WHEN: 10. November 2015
+
+PURPOSE: Our kind-of api for events
+
+-->
+
+<events>
+	<event starttime="2015-11-14T07:45:00Z" endtime="2015-11-20T20:00:00Z">
+		<title>Planlegging</title>
+		<place lat="63.4163674" lng="10.4033087">Drivhuset</place>
+		<description>Vi må planlegge våres fremgang og progresjon for å videre kunne ta over verdensherredømmet og redde universet fra elendig musikksmak. Dette er en essensiell samling for å skape ideer og florere med ny kunnskap.</description>
+	</event>
+	<event starttime="2015-11-16T03:30:00Z" endtime="2015-11-20T23:15:00Z">
+		<title>Legge plan</title>
+		<place lat="63.4163674" lng="10.4033087">Drivhuset</place>
+		<description>Dette er del 2 i programmet vårt om å kunne ta over verdensherredømmet og redde universet fra elendig musikksmak. Dette er en essensiell samling for å skape ideer og florere med ny kunnskap.</description>
+	</event>
+	<event starttime="2015-11-20T08:00:00Z" endtime="2015-11-20T20:00:00Z">
+		<title>Øving</title>
+		<place lat="63.41808" lng="10.40585">P15</place>
+		<description>Nå skal det øves!</description>
+	</event>
+    <event starttime="2015-11-23T17:00:00Z" endtime="2015-11-23T20:00:00Z">
+		<title>Meet-up</title>
+		<place lat="63.419337" lng="10.401724">Hovedbygget</place>
+		<description>Meet-up i hovedbygget på Gløs!</description>
+	</event>
+    <event starttime="2015-11-30T20:00:00Z" endtime="2015-11-30T23:00:00Z">
+		<title>Mini-konsert</title>
+		<place lat="63.4224769" lng="10.3944302">Studentersamfundet</place>
+		<description>Intimkonsert på Samfundet, arrangert av Nabostøy!</description>
+	</event>
+    <event starttime="2015-12-02T18:00:00Z" endtime="2015-12-02T22:00:00Z">
+		<title>Kulturell kveld</title>
+		<place lat="63.4260951" lng="10.3935593">Utenfor Nidarosdomen</place>
+		<description>Møt opp ved Nidarosdomen og lær om den musikalske historien tilknyttet den kjente kirken!</description>
+	</event>
+    <event starttime="2015-12-07T19:00:00Z" endtime="2015-12-07T23:59:59Z">
+		<title>Åpen scene</title>
+		<place lat="63.4338681" lng="10.3992949">Bar 3B</place>
+		<description>Vi har leid Bar 3B og har åpen scene!</description>
+	</event>
+    <event starttime="2015-12-11T20:00:00Z" endtime="2015-12-12T02:00:00Z">
+		<title>Musikkfest</title>
+		<place lat="63.4095077" lng="10.427416">Moholt</place>
+		<description>Vi har fått lånt en kjeller på Moholt og inviterer nabostøys medlemmer på fest!</description>
+	</event>
+    <event starttime="2015-12-16T19:00:00Z" endtime="2015-12-16T23:00:00Z">
+		<title>Konsert</title>
+		<place lat="63.4295541" lng="10.384599">Trondheim Spektrum</place>
+		<description>The blablablas spiller i Trondheim Spektrum!</description>
+	</event>
+    <event starttime="2016-01-05T17:00:00Z" endtime="2016-01-05T21:00:00Z">
+		<title>Møte</title>
+		<place lat="63.4163674" lng="10.4033087">Drivhuset</place>
+		<description>Diskusjon om Nabostøys videre eksistens!</description>
+	</event>
+    <event starttime="2020-01-01T00:00:00Z" endtime="2222-01-11T23:59:00Z">
+		<title>Verden</title>
+		<place lat="63.4163674" lng="10.4033087">Verden</place>
+		<description>Nabostøy har overtatt verden!</description>
+	</event>
+</events>

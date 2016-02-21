@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE articles SYSTEM "articles.dtd">
+
+<!--
+
+FILE NAME: Project/data/articles.xml
+
+WRITTEN BY: Siddise Hirpa
+
+WHEN: 10. November 2015
+
+PURPOSE: Our kind-of api for articles
+
+-->
+
+<articles>
+	<article id="1">
+		<title>Hvilken gitar passer deg best?</title>
+		<picture src="./images/articleimages/gitar.jpg" alt="En gitar"/>
+        <intro>Stor test av <b>kjente gitarmerker</b> viser forbløffende resultater.</intro>
+        <tags>
+            <tag name="instrument"/>
+        </tags>
+        <author>Hanne Brade</author>
+        <datetime>2015-11-10T09:25:00Z</datetime>
+		<content>
+            <paragraph>
+Stor test av <b>kjente gitarmerker</b> viser forbløffende resultater. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, lorem vitae elementum ultrices, nisl arcu molestie ligula, sed dapibus risus enim ac arcu. Mauris viverra, felis quis ultricies consectetur, turpis nibh pellentesque velit, et tristique arcu ex sed lectus. Vestibulum eget magna libero. Sed lorem nisi, vestibulum luctus massa vitae, auctor porttitor ex. Fusce quis cursus velit. Duis dictum suscipit magna, non molestie ante facilisis sed. Aenean tempor dictum eros imperdiet scelerisque. Sed eleifend malesuada tortor, quis pulvinar eros facilisis at. Aenean egestas augue quis nisi pretium bibendum. Proin fermentum mauris interdum turpis rutrum pretium. In porta nulla ut nisl bibendum suscipit. Aenean auctor ut turpis in dictum. Vivamus ullamcorper, eros at dignissim sollicitudin, sem ex lacinia metus, ut finibus nunc quam tempor metus. Suspendisse non justo fermentum ante cursus euismod vitae at velit. Aenean ornare nulla ut pharetra pulvinar.
+            </paragraph>
+			
+            <paragraph>
+Denne testen er mer enn bare en test, men også en avgjører i den lange debatten om de beste gitarene noen sinne. In id est ac sapien semper ultrices eu non ex. Sed et tempus nulla, in egestas dui. Cras rutrum, felis vitae laoreet tincidunt, est orci faucibus nisl, sit amet pretium nulla nisl sit amet nunc. Duis mollis diam sit amet auctor efficitur. Proin tempus varius laoreet. Phasellus tempor, purus in pellentesque accumsan, tortor tortor tincidunt orci, vel ullamcorper erat risus eget quam. Aenean commodo mollis nisi. Vestibulum est quam, pulvinar et pulvinar ut, placerat a est. Nullam eros turpis, varius ut sem at, vehicula auctor justo. Pellentesque quis lorem ligula. Nam tristique gravida purus, id consectetur nisi accumsan at. Vivamus aliquam, diam sagittis tincidunt facilisis, libero orci pulvinar mi, at sollicitudin magna velit et mi. Maecenas at sem vel libero ornare semper. Donec consectetur nulla congue, lobortis lorem finibus, ullamcorper elit. Sed a dolor pulvinar, tristique sapien a, pellentesque lectus. Phasellus lacinia quis velit vitae dignissim. 
+            </paragraph>
+            
+            <paragraph>
+In id est ac sapien semper ultrices eu non ex. Sed et tempus nulla, in egestas dui. Cras rutrum, felis vitae laoreet tincidunt, est orci faucibus nisl, sit amet pretium nulla nisl sit amet nunc. Duis mollis diam sit amet auctor efficitur. Proin tempus varius laoreet. Phasellus tempor, purus in pellentesque accumsan, tortor tortor tincidunt orci, vel ullamcorper erat risus eget quam. Aenean commodo mollis nisi. Vestibulum est quam, pulvinar et pulvinar ut, placerat a est. Nullam eros turpis, varius ut sem at, vehicula auctor justo. Pellentesque quis lorem ligula. Nam tristique gravida purus, id consectetur nisi accumsan at. Vivamus aliquam, diam sagittis tincidunt facilisis, libero orci pulvinar mi, at sollicitudin magna velit et mi. Maecenas at sem vel libero ornare semper. Donec consectetur nulla congue, lobortis lorem finibus, ullamcorper elit. Sed a dolor pulvinar, tristique sapien a, pellentesque lectus. Phasellus lacinia quis velit vitae dignissim. 
+            </paragraph>
+		</content>
+	</article>
+    <article id="2">
+		<title>Wingsuits kommer ut med ny singel!</title>
+		<picture src="./images/artistimages/wingsuits.jpg" alt="Bandbilde av Wingsuits"/>
+        <intro>Det nylig oppstartede bandet i Trondheim, Wingsuits, kommer ut med sin første singel</intro>
+        <tags>
+            <tag name="Uhørt"/>
+            <tag name="upandcoming"/>
+            <tag name="artist"/>
+            <tag name="nymusikk"/>
+        </tags>
+        <author>Mette Martoren</author>
+        <datetime>2015-11-11T09:25:00Z</datetime>
+		<content>
+            <paragraph>
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, lorem vitae elementum ultrices, nisl arcu molestie ligula, sed dapibus risus enim ac arcu. Mauris viverra, felis quis ultricies consectetur, turpis nibh pellentesque velit, et tristique arcu ex sed lectus. Vestibulum eget magna libero. Sed lorem nisi, vestibulum luctus massa vitae, auctor porttitor ex. Fusce quis cursus velit. Duis dictum suscipit magna, non molestie ante facilisis sed. Aenean tempor dictum eros imperdiet scelerisque. Sed eleifend malesuada tortor, quis pulvinar eros facilisis at. Aenean egestas augue quis nisi pretium bibendum. Proin fermentum mauris interdum turpis rutrum pretium. In porta nulla ut nisl bibendum suscipit. Aenean auctor ut turpis in dictum. Vivamus ullamcorper, eros at dignissim sollicitudin, sem ex lacinia metus, ut finibus nunc quam tempor metus. Suspendisse non justo fermentum ante cursus euismod vitae at velit. Aenean ornare nulla ut pharetra pulvinar.
+            </paragraph>
+			<header>Spill dems nye låt!</header>
+            <media type="audio" name="Suit Me" src="Suit_Me.m4a" pic="./images/articleimages/wingsuits.jpg"/>
+            <paragraph>
+Denne testen er mer enn bare en test, men også en avgjører i den lange debatten om de beste gitarene noen sinne. In id est ac sapien semper ultrices eu non ex. Sed et tempus nulla, in egestas dui. Cras rutrum, felis vitae laoreet tincidunt, est orci faucibus nisl, sit amet pretium nulla nisl sit amet nunc. Duis mollis diam sit amet auctor efficitur. Proin tempus varius laoreet. Phasellus tempor, purus in pellentesque accumsan, tortor tortor tincidunt orci, vel ullamcorper erat risus eget quam. Aenean commodo mollis nisi. Vestibulum est quam, pulvinar et pulvinar ut, placerat a est. Nullam eros turpis, varius ut sem at, vehicula auctor justo. Pellentesque quis lorem ligula. Nam tristique gravida purus, id consectetur nisi accumsan at. Vivamus aliquam, diam sagittis tincidunt facilisis, libero orci pulvinar mi, at sollicitudin magna velit et mi. Maecenas at sem vel libero ornare semper. Donec consectetur nulla congue, lobortis lorem finibus, ullamcorper elit. Sed a dolor pulvinar, tristique sapien a, pellentesque lectus. Phasellus lacinia quis velit vitae dignissim.
+            </paragraph>
+            
+            <paragraph>
+In id est ac sapien semper ultrices eu non ex. Sed et tempus nulla, in egestas dui. Cras rutrum, felis vitae laoreet tincidunt, est orci faucibus nisl, sit amet pretium nulla nisl sit amet nunc. Duis mollis diam sit amet auctor efficitur. Proin tempus varius laoreet. Phasellus tempor, purus in pellentesque accumsan, tortor tortor tincidunt orci, vel ullamcorper erat risus eget quam. Aenean commodo mollis nisi. Vestibulum est quam, pulvinar et pulvinar ut, placerat a est. Nullam eros turpis, varius ut sem at, vehicula auctor justo. Pellentesque quis lorem ligula. Nam tristique gravida purus, id consectetur nisi accumsan at. Vivamus aliquam, diam sagittis tincidunt facilisis, libero orci pulvinar mi, at sollicitudin magna velit et mi. Maecenas at sem vel libero ornare semper. Donec consectetur nulla congue, lobortis lorem finibus, ullamcorper elit. Sed a dolor pulvinar, tristique sapien a, pellentesque lectus. Phasellus lacinia quis velit vitae dignissim. 
+            </paragraph>
+		</content>
+	</article>
+	<article id="3">
+		<title>Årets liveartist</title>
+		<picture src="./images/articleimages/kanye.jpg" alt="Kanye på scenen"/>
+        <intro>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</intro>
+        <tags>
+            <tag name="Uhørt"/>
+            <tag name="konsert"/>
+            <tag name="upandcoming"/>
+        </tags>
+        <author>Morten Mandel</author>
+        <datetime>2015-11-08T09:15:00Z</datetime>
+		<content>
+			<paragraph>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, lorem vitae elementum ultrices, nisl arcu molestie ligula, sed dapibus risus enim ac arcu. Mauris viverra, felis quis ultricies consectetur, turpis nibh pellentesque velit, et tristique arcu ex sed lectus. Vestibulum eget magna libero. Sed lorem nisi, vestibulum luctus massa vitae, auctor porttitor ex. Fusce quis cursus velit. Duis dictum suscipit magna, non molestie ante facilisis sed. Aenean tempor dictum eros imperdiet scelerisque. Sed eleifend malesuada tortor, quis pulvinar eros facilisis at. Aenean egestas augue quis nisi pretium bibendum. Proin fermentum mauris interdum turpis rutrum pretium. In porta nulla ut nisl bibendum suscipit. Aenean auctor ut turpis in dictum. Vivamus ullamcorper, eros at dignissim sollicitudin, sem ex lacinia metus, ut finibus nunc quam tempor metus. Suspendisse non justo fermentum ante cursus euismod vitae at velit. Aenean ornare nulla ut pharetra pulvinar.
+            </paragraph>
+			
+            <paragraph>
+In id est ac sapien semper ultrices eu non ex. Sed et tempus nulla, in egestas dui. Cras rutrum, felis vitae laoreet tincidunt, est orci faucibus nisl, sit amet pretium nulla nisl sit amet nunc. Duis mollis diam sit amet auctor efficitur. Proin tempus varius laoreet. Phasellus tempor, purus in pellentesque accumsan, tortor tortor tincidunt orci, vel ullamcorper erat risus eget quam. Aenean commodo mollis nisi. Vestibulum est quam, pulvinar et pulvinar ut, placerat a est. Nullam eros turpis, varius ut sem at, vehicula auctor justo. Pellentesque quis lorem ligula. Nam tristique gravida purus, id consectetur nisi accumsan at. Vivamus aliquam, diam sagittis tincidunt facilisis, libero orci pulvinar mi, at sollicitudin magna velit et mi. Maecenas at sem vel libero ornare semper. Donec consectetur nulla congue, lobortis lorem finibus, ullamcorper elit. Sed a dolor pulvinar, tristique sapien a, pellentesque lectus. Phasellus lacinia quis velit vitae dignissim. 
+            </paragraph>
+            
+            <paragraph>
+In id est ac sapien semper ultrices eu non ex. Sed et tempus nulla, in egestas dui. Cras rutrum, felis vitae laoreet tincidunt, est orci faucibus nisl, sit amet pretium nulla nisl sit amet nunc. Duis mollis diam sit amet auctor efficitur. Proin tempus varius laoreet. Phasellus tempor, purus in pellentesque accumsan, tortor tortor tincidunt orci, vel ullamcorper erat risus eget quam. Aenean commodo mollis nisi. Vestibulum est quam, pulvinar et pulvinar ut, placerat a est. Nullam eros turpis, varius ut sem at, vehicula auctor justo. Pellentesque quis lorem ligula. Nam tristique gravida purus, id consectetur nisi accumsan at. Vivamus aliquam, diam sagittis tincidunt facilisis, libero orci pulvinar mi, at sollicitudin magna velit et mi. Maecenas at sem vel libero ornare semper. Donec consectetur nulla congue, lobortis lorem finibus, ullamcorper elit. Sed a dolor pulvinar, tristique sapien a, pellentesque lectus. Phasellus lacinia quis velit vitae dignissim. 
+            </paragraph>
+            <header>Hør på sangen her og nå:</header>
+            <media type="audio" name="Hope" src="Motorama - Ghost.mp3" pic="./images/articleimages/kanye.jpg"/>
+			<paragraph>Du vil få hakeslepp av denne nye singelen. Dolor sit amet, consectetur adipiscing elit. Mauris tristique felis sed libero maximus maximus. Donec magna lacus, luctus ut tortor ac, vulputate ultricies metus. Nam ac elit nec nisl volutpat accumsan a vel nibh. Proin in lacus dolor. Donec auctor in ex id vulputate. Mauris in lacus tempus, convallis nisi at, luctus mauris. Donec lacinia rutrum erat ut blandit. Nulla vel sem arcu. Duis sollicitudin hendrerit elit, a finibus enim egestas ac. Vestibulum feugiat tristique odio, quis interdum felis.</paragraph>
+		</content>
+	</article>
+    <article id="4">
+		<title>Mozart Salieris erkefiende er tilbake!</title>
+		<picture src="./images/articleimages/bach.jpg" alt="Bilde av erkefienden til Mozart"/>
+        <intro>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</intro>
+        <tags>
+            <tag name="nyeledere"/>
+            <tag name="artist"/>
+        </tags>
+        <author>Arne Salieri</author>
+        <datetime>2015-10-08T19:15:00Z</datetime>
+		<content>
+			<paragraph>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, lorem vitae elementum ultrices, nisl arcu molestie ligula, sed dapibus risus enim ac arcu. Mauris viverra, felis quis ultricies consectetur, turpis nibh pellentesque velit, et tristique arcu ex sed lectus. Vestibulum eget magna libero. Sed lorem nisi, vestibulum luctus massa vitae, auctor porttitor ex. Fusce quis cursus velit. Duis dictum suscipit magna, non molestie ante facilisis sed. Aenean tempor dictum eros imperdiet scelerisque. Sed eleifend malesuada tortor, quis pulvinar eros facilisis at. Aenean egestas augue quis nisi pretium bibendum. Proin fermentum mauris interdum turpis rutrum pretium. In porta nulla ut nisl bibendum suscipit. Aenean auctor ut turpis in dictum. Vivamus ullamcorper, eros at dignissim sollicitudin, sem ex lacinia metus, ut finibus nunc quam tempor metus. Suspendisse non justo fermentum ante cursus euismod vitae at velit. Aenean ornare nulla ut pharetra pulvinar.
+            </paragraph>
+			
+            <paragraph>
+In id est ac sapien semper ultrices eu non ex. Sed et tempus nulla, in egestas dui. Cras rutrum, felis vitae laoreet tincidunt, est orci faucibus nisl, sit amet pretium nulla nisl sit amet nunc. Duis mollis diam sit amet auctor efficitur. Proin tempus varius laoreet. Phasellus tempor, purus in pellentesque accumsan, tortor tortor tincidunt orci, vel ullamcorper erat risus eget quam. Aenean commodo mollis nisi. Vestibulum est quam, pulvinar et pulvinar ut, placerat a est. Nullam eros turpis, varius ut sem at, vehicula auctor justo. Pellentesque quis lorem ligula. Nam tristique gravida purus, id consectetur nisi accumsan at. Vivamus aliquam, diam sagittis tincidunt facilisis, libero orci pulvinar mi, at sollicitudin magna velit et mi. Maecenas at sem vel libero ornare semper. Donec consectetur nulla congue, lobortis lorem finibus, ullamcorper elit. Sed a dolor pulvinar, tristique sapien a, pellentesque lectus. Phasellus lacinia quis velit vitae dignissim. 
+            </paragraph>
+            
+            <paragraph>
+In id est ac sapien semper ultrices eu non ex. Sed et tempus nulla, in egestas dui. Cras rutrum, felis vitae laoreet tincidunt, est orci faucibus nisl, sit amet pretium nulla nisl sit amet nunc. Duis mollis diam sit amet auctor efficitur. Proin tempus varius laoreet. Phasellus tempor, purus in pellentesque accumsan, tortor tortor tincidunt orci, vel ullamcorper erat risus eget quam. Aenean commodo mollis nisi. Vestibulum est quam, pulvinar et pulvinar ut, placerat a est. Nullam eros turpis, varius ut sem at, vehicula auctor justo. Pellentesque quis lorem ligula. Nam tristique gravida purus, id consectetur nisi accumsan at. Vivamus aliquam, diam sagittis tincidunt facilisis, libero orci pulvinar mi, at sollicitudin magna velit et mi. Maecenas at sem vel libero ornare semper. Donec consectetur nulla congue, lobortis lorem finibus, ullamcorper elit. Sed a dolor pulvinar, tristique sapien a, pellentesque lectus. Phasellus lacinia quis velit vitae dignissim. 
+            </paragraph>
+		</content>
+	</article>
+    <article id="5">
+		<title>Kan salat hjelpe med musikksmaken til Beliebers???</title>
+		<picture src="./images/articleimages/salat.jpg" alt="Ei dame som spiser salat"/>
+        <intro>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</intro>
+        <tags>
+            <tag name="konsert"/>
+            <tag name="upandcoming"/>
+        </tags>
+        <author>Arne Salieri</author>
+        <datetime>2015-11-03T09:15:00Z</datetime>
+		<content>
+			<paragraph>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, lorem vitae elementum ultrices, nisl arcu molestie ligula, sed dapibus risus enim ac arcu. Mauris viverra, felis quis ultricies consectetur, turpis nibh pellentesque velit, et tristique arcu ex sed lectus. Vestibulum eget magna libero. Sed lorem nisi, vestibulum luctus massa vitae, auctor porttitor ex. Fusce quis cursus velit. Duis dictum suscipit magna, non molestie ante facilisis sed. Aenean tempor dictum eros imperdiet scelerisque. Sed eleifend malesuada tortor, quis pulvinar eros facilisis at. Aenean egestas augue quis nisi pretium bibendum. Proin fermentum mauris interdum turpis rutrum pretium. In porta nulla ut nisl bibendum suscipit. Aenean auctor ut turpis in dictum. Vivamus ullamcorper, eros at dignissim sollicitudin, sem ex lacinia metus, ut finibus nunc quam tempor metus. Suspendisse non justo fermentum ante cursus euismod vitae at velit. Aenean ornare nulla ut pharetra pulvinar.
+            </paragraph>
+			
+            <paragraph>
+In id est ac sapien semper ultrices eu non ex. Sed et tempus nulla, in egestas dui. Cras rutrum, felis vitae laoreet tincidunt, est orci faucibus nisl, sit amet pretium nulla nisl sit amet nunc. Duis mollis diam sit amet auctor efficitur. Proin tempus varius laoreet. Phasellus tempor, purus in pellentesque accumsan, tortor tortor tincidunt orci, vel ullamcorper erat risus eget quam. Aenean commodo mollis nisi. Vestibulum est quam, pulvinar et pulvinar ut, placerat a est. Nullam eros turpis, varius ut sem at, vehicula auctor justo. Pellentesque quis lorem ligula. Nam tristique gravida purus, id consectetur nisi accumsan at. Vivamus aliquam, diam sagittis tincidunt facilisis, libero orci pulvinar mi, at sollicitudin magna velit et mi. Maecenas at sem vel libero ornare semper. Donec consectetur nulla congue, lobortis lorem finibus, ullamcorper elit. Sed a dolor pulvinar, tristique sapien a, pellentesque lectus. Phasellus lacinia quis velit vitae dignissim. 
+            </paragraph>
+            
+            <paragraph>
+In id est ac sapien semper ultrices eu non ex. Sed et tempus nulla, in egestas dui. Cras rutrum, felis vitae laoreet tincidunt, est orci faucibus nisl, sit amet pretium nulla nisl sit amet nunc. Duis mollis diam sit amet auctor efficitur. Proin tempus varius laoreet. Phasellus tempor, purus in pellentesque accumsan, tortor tortor tincidunt orci, vel ullamcorper erat risus eget quam. Aenean commodo mollis nisi. Vestibulum est quam, pulvinar et pulvinar ut, placerat a est. Nullam eros turpis, varius ut sem at, vehicula auctor justo. Pellentesque quis lorem ligula. Nam tristique gravida purus, id consectetur nisi accumsan at. Vivamus aliquam, diam sagittis tincidunt facilisis, libero orci pulvinar mi, at sollicitudin magna velit et mi. Maecenas at sem vel libero ornare semper. Donec consectetur nulla congue, lobortis lorem finibus, ullamcorper elit. Sed a dolor pulvinar, tristique sapien a, pellentesque lectus. Phasellus lacinia quis velit vitae dignissim. 
+            </paragraph>
+		</content>
+	</article>
+    <article id="6">
+		<title>Stor konsert i Trondheim!</title>
+		<picture src="./images/articleimages/kanye.jpg" alt="Kanye på scenen"/>
+        <intro>Etter lange forhandlinger kan Trondheim endelig få Kanye West på scenen.</intro>
+        <tags>
+            <tag name="uhørt"/>
+            <tag name="nymusikk"/>
+            <tag name="radio"/>
+        </tags>
+        <author>Markus Beethoven</author>
+        <datetime>2015-10-20T09:15:00Z</datetime>
+		<content>
+			<paragraph>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin, lorem vitae elementum ultrices, nisl arcu molestie ligula, sed dapibus risus enim ac arcu. Mauris viverra, felis quis ultricies consectetur, turpis nibh pellentesque velit, et tristique arcu ex sed lectus. Vestibulum eget magna libero. Sed lorem nisi, vestibulum luctus massa vitae, auctor porttitor ex. Fusce quis cursus velit. Duis dictum suscipit magna, non molestie ante facilisis sed. Aenean tempor dictum eros imperdiet scelerisque. Sed eleifend malesuada tortor, quis pulvinar eros facilisis at. Aenean egestas augue quis nisi pretium bibendum. Proin fermentum mauris interdum turpis rutrum pretium. In porta nulla ut nisl bibendum suscipit. Aenean auctor ut turpis in dictum. Vivamus ullamcorper, eros at dignissim sollicitudin, sem ex lacinia metus, ut finibus nunc quam tempor metus. Suspendisse non justo fermentum ante cursus euismod vitae at velit. Aenean ornare nulla ut pharetra pulvinar.
+            </paragraph>
+			
+            <paragraph>
+In id est ac sapien semper ultrices eu non ex. Sed et tempus nulla, in egestas dui. Cras rutrum, felis vitae laoreet tincidunt, est orci faucibus nisl, sit amet pretium nulla nisl sit amet nunc. Duis mollis diam sit amet auctor efficitur. Proin tempus varius laoreet. Phasellus tempor, purus in pellentesque accumsan, tortor tortor tincidunt orci, vel ullamcorper erat risus eget quam. Aenean commodo mollis nisi. Vestibulum est quam, pulvinar et pulvinar ut, placerat a est. Nullam eros turpis, varius ut sem at, vehicula auctor justo. Pellentesque quis lorem ligula. Nam tristique gravida purus, id consectetur nisi accumsan at. Vivamus aliquam, diam sagittis tincidunt facilisis, libero orci pulvinar mi, at sollicitudin magna velit et mi. Maecenas at sem vel libero ornare semper. Donec consectetur nulla congue, lobortis lorem finibus, ullamcorper elit. Sed a dolor pulvinar, tristique sapien a, pellentesque lectus. Phasellus lacinia quis velit vitae dignissim. 
+            </paragraph>
+            
+            <paragraph>
+In id est ac sapien semper ultrices eu non ex. Sed et tempus nulla, in egestas dui. Cras rutrum, felis vitae laoreet tincidunt, est orci faucibus nisl, sit amet pretium nulla nisl sit amet nunc. Duis mollis diam sit amet auctor efficitur. Proin tempus varius laoreet. Phasellus tempor, purus in pellentesque accumsan, tortor tortor tincidunt orci, vel ullamcorper erat risus eget quam. Aenean commodo mollis nisi. Vestibulum est quam, pulvinar et pulvinar ut, placerat a est. Nullam eros turpis, varius ut sem at, vehicula auctor justo. Pellentesque quis lorem ligula. Nam tristique gravida purus, id consectetur nisi accumsan at. Vivamus aliquam, diam sagittis tincidunt facilisis, libero orci pulvinar mi, at sollicitudin magna velit et mi. Maecenas at sem vel libero ornare semper. Donec consectetur nulla congue, lobortis lorem finibus, ullamcorper elit. Sed a dolor pulvinar, tristique sapien a, pellentesque lectus. Phasellus lacinia quis velit vitae dignissim. 
+            </paragraph>
+        </content>
+	</article>
+</articles>

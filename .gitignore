@@ -1,5 +1,12 @@
 api/
 media/
+images/*
+!images/default.jpg
+!images/header.png
+!images/icon.png
+!images/sitemap.png
+fonts/
+compile.json
 
 .idea/
 .ftp*

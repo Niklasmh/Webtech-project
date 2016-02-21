@@ -1,0 +1,8 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 100 100">
+    <style>
+        .svg-btn {
+            fill: #984700;
+        }
+    </style>
+    <path class="up svg-btn" d="M54,29.8L81,70.2H66.8L51.1,46.1L33.2,70.2H19l27.7-40.3H54z"/>
+</svg>

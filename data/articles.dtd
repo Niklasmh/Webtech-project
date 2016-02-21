@@ -1,0 +1,52 @@
+<!--
+
+FILE NAME: Project/data/articles.dtd
+
+WRITTEN BY: Siddise Hirpa
+
+WHEN: 10. November 2015
+
+PURPOSE: Make a structure for articles.xml
+
+-->
+
+<!ELEMENT articles (group)>
+
+<!ELEMENT article (title, picture, intro, tags, author, datetime, content)*>
+<!ATTLIST article id IDREF #REQUIRED>
+
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT picture EMPTY>
+<!ELEMENT intro (#PCDATA)>
+<!ELEMENT tags (tag)>
+<!ELEMENT author EMPTY>
+<!ELEMENT datetime EMPTY>
+<!ELEMENT content (paragraph, header, media)>
+
+<!ELEMENT title EMPTY>
+
+<!ELEMENT picture EMPTY>
+<!ATTLIST picture src CDATA "false">
+<!ATTLIST picture alt CDATA #REQUIRED>
+
+<!ELEMENT intro (#PCDATA)>
+
+<!ELEMENT tag EMPTY>
+<!ATTLIST tag name CDATA #REQUIRED>
+
+<!ELEMENT author (#PCDATA)>
+
+<!ELEMENT datetime (#PCDATA)>
+
+<!ELEMENT content (header, paragraph, media)>
+
+<!ELEMENT header (#PCDATA)>
+
+<!ELEMENT paragraph (#PCDATA)>
+
+<!ELEMENT media (#PCDATA)>
+<!ATTLIST media type CDATA #REQUIRED>
+<!ATTLIST media name CDATA #REQUIRED>
+<!ATTLIST media title CDATA "false">
+<!ATTLIST media src CDATA #REQUIRED>
+<!ATTLIST media pic CDATA #REQUIRED>

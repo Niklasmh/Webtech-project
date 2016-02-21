@@ -1,0 +1,8 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 100 100">
+	<style>
+        .svg-btn {
+            fill: #fff;
+        }
+	</style>
+	<path class="svg-btn" d="M49.2,51.4L28.4,65.3V58l12.4-8.1l-12.4-9.2v-7.3l20.8,14.3V51.4z M72.6,51.4L51.8,65.3V58l12.4-8.1l-12.4-9.2v-7.3l20.8,14.3V51.4z"/>
+</svg>
